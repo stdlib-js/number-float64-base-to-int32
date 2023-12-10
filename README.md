@@ -35,30 +35,14 @@ limitations under the License.
 
 > Convert a [double-precision floating-point number][ieee754] to a signed 32-bit integer.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/number-float64-base-to-int32
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var float64ToInt32 = require( '@stdlib/number-float64-base-to-int32' );
+import float64ToInt32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int32@esm/index.mjs';
 ```
 
 #### float64ToInt32( x )
@@ -95,11 +79,16 @@ y = float64ToInt32( -Infinity );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var round = require( '@stdlib/math-base-special-round' );
-var MAX_INT = require( '@stdlib/constants-uint32-max' );
-var float64ToInt32 = require( '@stdlib/number-float64-base-to-int32' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
+import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
+import MAX_INT from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@esm/index.mjs';
+import float64ToInt32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int32@esm/index.mjs';
 
 var int32;
 var f64;
@@ -114,6 +103,10 @@ for ( i = 0; i < 500; i++ ) {
 
     console.log( 'float64: %d => int32: %d', f64, int32 );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -143,7 +136,7 @@ for ( i = 0; i < 500; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -207,7 +200,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/number/float64/base/to-uint32]: https://github.com/stdlib-js/number-float64-base-to-uint32
+[@stdlib/number/float64/base/to-uint32]: https://github.com/stdlib-js/number-float64-base-to-uint32/tree/esm
 
 <!-- </related-links> -->
 
