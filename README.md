@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import float64ToInt32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int32@esm/index.mjs';
+import float64ToInt32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int32@v0.2.3-esm/index.mjs';
 ```
 
 #### float64ToInt32( x )
@@ -88,7 +88,7 @@ y = float64ToInt32( -Infinity );
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
 import MAX_INT from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@esm/index.mjs';
-import float64ToInt32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int32@esm/index.mjs';
+import float64ToInt32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int32@v0.2.3-esm/index.mjs';
 
 var int32;
 var f64;
